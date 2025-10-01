@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo chown vincent hello 2>/dev/null && [ $(stat -c %U hello) = guillaume ]
+[ "$(stat -c %U hello)" = "guillaume" ] && chown vincent hello
